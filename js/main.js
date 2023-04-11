@@ -1,4 +1,4 @@
-alert("Bienvenido a la calculadora de la ley de Ohm")
+alert("Bienvenido a la calculadora de la ley de Ohm");
 
 //Variables
 
@@ -28,7 +28,7 @@ function calcularCorriente() {
 
 //Condicionales
 
-if (formula == "resistencia") {
+if (formula == "resistencia") { //Cuando la opción elegída es "Resistencia"
     voltaje = parseInt(prompt("Ingrese, con valores numéricos, el valor del voltaje (En Voltios)"));
     while (isNaN(voltaje)) {
         alert("El valor ingresado es incorrecto, por favor, vuelva a ingresarlo.");
@@ -40,7 +40,7 @@ if (formula == "resistencia") {
         corriente = parseInt(prompt("Ingrese, con valores numéricos, el valor de la corriente eléctrica (En Amperes)"));
     }
     alert("La resistencia eléctrica necesaria para este circuito es de: " + calcularResistencia().toFixed(2) + " Ω");
-} else if (formula == "voltaje") {
+} else if (formula == "voltaje") { //Cuando la opción elegída es "Voltaje"
     resistencia = parseInt(prompt("Ingrese, con valores numéricos, el valor de la resistencia (En Ohm)"));
     while (isNaN(resistencia)) {
         alert("El valor ingresado es incorrecto, por favor, vuelva a ingresarlo.");
@@ -52,7 +52,7 @@ if (formula == "resistencia") {
         corriente = parseInt(prompt("Ingrese, con valores numéricos, el valor de la corriente eléctrica (En Amperes)"));
     }
     alert("El voltaje necesario para este circuito es de: " + calcularVoltaje().toFixed(2) + " Voltios");
-} else if (formula == "corriente") {
+} else if (formula == "corriente") { //Cuando la opción elegída es "Corriente"
     resistencia = parseInt(prompt("Ingrese, con valores numéricos, el valor de la resistencia (En Ohm)"));
     while (isNaN(resistencia)) {
         alert("El valor ingresado es incorrecto, por favor, vuelva a ingresarlo.");
